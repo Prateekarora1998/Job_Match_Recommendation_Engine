@@ -70,7 +70,7 @@ class jobRecommendationEngine:
                     "Jobseeker_Name",
                     "Job_ID",
                     "Job_Title",
-                    "Matching_Skill_Set",
+                    "Matching_Skill_Count",
                     "Matching_Skill_Percentage",
                 ],
             )
@@ -79,6 +79,9 @@ class jobRecommendationEngine:
 
         except ZeroDivisionError:
             raise ZeroDivisionError
+        
+        except KeyError:
+            raise KeyError
 
         except Exception as e:
             print(e)

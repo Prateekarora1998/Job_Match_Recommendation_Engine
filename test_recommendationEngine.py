@@ -45,7 +45,7 @@ def test_jobseeker_jobs():
             "Jobseeker_Name",
             "Job_ID",
             "Job_Title",
-            "Matching_Skill_Set",
+            "Matching_Skill_Count",
             "Matching_Skill_Percentage",
         ],
     )
@@ -65,6 +65,26 @@ def test_division_by_zero():
                 [2, "Frontend Developer", ""],
             ],
             columns=["id", "title", "required_skills"],
+        )
+        jobseekerDataFrame = pd.DataFrame(
+            [
+                [1, "Alice", "Python, SQL, Django"],
+                [2, "Peter", "Angular, React.js, Flask, HTML"],
+            ],
+            columns=["id", "name", "skills"],
+        )
+        jobRecommendationEngine.calculatePercentage(jobsDataFrame, jobseekerDataFrame)
+
+
+def test_key_error():
+
+    with pytest.raises(KeyError):
+        jobsDataFrame = pd.DataFrame(
+            [
+                [1, "Python, SQL, Flask, Django"],
+                [2, "Angular, React.js, HTML"],
+            ],
+            columns=["id", "required_skills"],
         )
         jobseekerDataFrame = pd.DataFrame(
             [
@@ -104,7 +124,7 @@ def test_lowercase_uppercase_skills():
             "Jobseeker_Name",
             "Job_ID",
             "Job_Title",
-            "Matching_Skill_Set",
+            "Matching_Skill_Count",
             "Matching_Skill_Percentage",
         ],
     )

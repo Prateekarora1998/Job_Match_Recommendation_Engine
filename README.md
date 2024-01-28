@@ -1,22 +1,23 @@
 # Job Match Recommendation Engine
 
-Steps to execute the python code and test are given as follows:
+Steps to execute the python code and tests are given as follows:
 
 ### Prerequisite
 
 * Install Python. After the installation, type `python --version` in command prompt or terminal to check for the python installation.
+* Run command prompt or terminal as an Administrator.
 * Type `pip --version` to check for pip installation.
-* Install 3 libariers which are: Pyarrow, Pandas and Pytest.
+* Install 3 libariers using command prompt which are: Pandas, Pytest and Pyarrow.
 
     Windows:
     * `pip install pandas`
-    * `pip install pyarrow`
     * `pip install pytest`
+    * `pip install pyarrow`
     
     Ubuntu/Mac OS:
     * `sudo pip install pandas`
-    * `sudo pip install pyarrow`
     * `sudo pip install pytest`
+    * `sudo pip install pyarrow`
 * Type `pip list` or `pip3 list` to print the list of python libraries installed. If the above 3 libraries are installed, it will be displayed in the list.
 * Install `git`.
 
@@ -35,6 +36,6 @@ I have applied Black Formatter to both python files.
 * Open Command Prompt and locate to the drive/directory in which you want to clone the git repository
 * Type `git clone https://github.com/Prateekarora1998/Job_Match_Recommendation_Engine.git` to clone the repository.
 * Locate to the `Job_Match_Recommendation_Engine` folder using Command Prompt.
-* Type `pytest` in command prompt to run the automated tests.
+* Type `python -m pytest` in command prompt to run the automated tests.
 * After successfully running the tests, type `python recommendationEngine.py` to execute the python program. This will display the results in command prompt.
 
