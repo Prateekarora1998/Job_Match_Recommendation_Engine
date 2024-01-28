@@ -4,7 +4,7 @@ Steps to execute the python code and test are given as follows:
 
 ### Prerequisite
 
-* Install Python. You can download the .exe file to install the python from the offical python site. After the installation, type `python --version` in command prompt or terminal to check if python has been installed or not.
+* Install Python. After the installation, type `python --version` in command prompt or terminal to check for the python installation.
 * Type `pip --version` to check for pip installation.
 * Install 3 libariers which are: Pyarrow, Pandas and Pytest.
 
@@ -17,14 +17,14 @@ Steps to execute the python code and test are given as follows:
     * `sudo pip install pandas`
     * `sudo pip install pyarrow`
     * `sudo pip install pytest`
-* Type `pandas --version`, `pyarrow --version`, `pytest --version` to check for the installation.
+* Type `pip list` or `pip3 list` to print the list of python libraries installed. If the above 3 libraries are installed, it will be displayed in the list.
 * Install `git`.
 
-Note: Pyarrow is not being used in the code. It is should be installed to resolve the Warning error which is as follows:
+Note: Pyarrow is not being used in the code. It is installed to resolve the warning which is as follows:
 
 Warning: Pyarrow will become a required dependency of pandas in the next major release of pandas > (pandas 3.0), (to allow more performant data types, such as the Arrow string type, and > better interoperability with other libraries) but was not found to be installed on your > system.
 
-Moreover, as mentioned that Pyarrow will become a required dependency of pandas in the next major release of pandas, it is necessary to install this library inorder to avoid errors in future when pandas library is upgraded.
+As mentioned that Pyarrow will become a required dependency of pandas in the next major release of pandas, it is necessary to install this library inorder to avoid errors in future when pandas library is upgraded.
 
 ### Formatting of python files
 
