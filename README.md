@@ -9,14 +9,14 @@ Steps to execute the python code and test are given as follows:
 * Install 3 libariers which are: Pyarrow, Pandas and Pytest.
 
     Windows:
-            pip install pandas
-            pip install pyarrow
-            pip install pytest
+    * `pip install pandas`
+    * `pip install pyarrow`
+    * `pip install pytest`
     
     Ubuntu/Mac OS:
-            sudo pip install pandas
-            sudo pip install pyarrow
-            sudo pip install pytest
+    * `sudo pip install pandas`
+    * `sudo pip install pyarrow`
+    * `sudo pip install pytest`
 * Type `pandas --version`, `pyarrow --version`, `pytest --version` to check for the installation.
 * Install `git`.
 
