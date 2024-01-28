@@ -1,7 +1,5 @@
 # Job Match Recommendation Engine
 
-Steps to execute the python code and tests are given as follows:
-
 ### Prerequisite
 
 * Install Python. After the installation, type `python --version` in command prompt or terminal to check for the python installation.
