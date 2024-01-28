@@ -36,6 +36,6 @@ I have applied Black Formatter to both python files.
 * Open Command Prompt and locate to the drive/directory in which you want to clone the git repository
 * Type `git clone https://github.com/Prateekarora1998/Job_Match_Recommendation_Engine.git` to clone the repository.
 * Locate to the `Job_Match_Recommendation_Engine` folder using Command Prompt.
-* Type `python -m pytest` in command prompt to run the automated tests.
-* After successfully running the tests, type `python recommendationEngine.py` to execute the python program. This will display the results in command prompt.
+* Type `python -m pytest` in command prompt **to run the automated tests**.
+* After successfully running the tests, type `python recommendationEngine.py` **to execute the python program**. This will display the results in command prompt.
 
